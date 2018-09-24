@@ -4,6 +4,8 @@ Simple components for embedding unique content in Hub pages.
 
 To use, build the URL for the component you want, then use a Page iFrame card.
 
+These components are currently _in development_ and [feedback](https://github.com/esridc/hub-embed/issues) is very welcome.
+
 ## Tables
 
 Embed Base URL: `http://esridc.github.io/hub-embed/hub-embed-table.html`
@@ -24,5 +26,22 @@ Parameters can be added to the Base URL with either query `?` or anchor `#`
 [Example from Washington, DC](http://esridc.github.io/hub-embed/hub-embed-table.html#url=https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/0&outFields=*&hiddenFields=OBJECTID,CCN)
 
 
+Thanks to [Johns Creek](http://datahub.johnscreekga.gov/) for the example.
 
-Thanks to [Johns Creek](http://datahub.johnscreekga.gov/) for the code.
+### License
+
+Copyright &copy; 2018 Esri
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
