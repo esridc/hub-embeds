@@ -21,7 +21,7 @@ Parameters can be added to the Base URL with either query `?` or anchor `#`
 
 [Example from Johns Creek, GA](http://esridc.github.io/hub-embed/hub-embed-table.html#url=https://services1.arcgis.com/bqfNVPUK3HOnCFmA/arcgis/rest/services/Financial_Expenditures/FeatureServer/0/&outFields=FiscalYear,FiscalYearPeriod,ServiceCode,FundName,DepartmentCode,Department,ProgramCode,Program,SequenceCode,FunctionDesc,ExpenseCategory,FundType,Vendor,VendorID,VendorZip,PaymentID,PaymentMethod,PaymentDate,PaymentStatus,InvoiceID,InvoiceDate,DraftAmount,CreditAmount,Amount,Description,ExpenseType,PaymentMonth,PaymentMonthYear&hiddenFields=FID,C_Seq,Street,OBJECTID)
 
-[Example from Washington, DC](https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/0#outFields=*&hiddenFields=OBJECTID,CCN)
+[Example from Washington, DC](http://esridc.github.io/hub-embed/hub-embed-table.html#url=https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/0&outFields=*&hiddenFields=OBJECTID,CCN)
 
 
 
