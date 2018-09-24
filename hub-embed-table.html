@@ -37,7 +37,6 @@
   </style>
 
   <script>
-    var map;
 
     require([
       "esri/layers/FeatureLayer",
@@ -51,13 +50,30 @@
       dom, parser, ioQuery, ready
     ) {
 
+      function getAnchor() {
+          var currentUrl = document.URL,
+      	  urlParts   = currentUrl.split('#');
+
+          return (urlParts.length > 1) ? urlParts[1] : null;
+      }
+      function getQuery() {
+        return dojo.doc.location.search.slice(1)
+      }
+      function getOptions() {
+        var params = getAnchor();
+        if(params === null) {
+          params = getQuery();
+        }
+
+        return ioQuery.queryToObject(decodeURIComponent(params));
+      }
+
       parser.parse();
 
       ready(function(){
 
-        var options = ioQuery.queryToObject(decodeURIComponent(dojo.doc.location.search.slice(1)));
-        console.log("Query ID:", options);
-
+        var options = getOptions();
+        
         // Create the feature layer
         var myFeatureLayer = new FeatureLayer(options.url, {
           mode: FeatureLayer.MODE_ONDEMAND,
